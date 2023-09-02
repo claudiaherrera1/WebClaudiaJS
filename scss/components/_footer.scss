@@ -1,0 +1,26 @@
+.pie {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 200px;
+    background-image: url("../images/footer.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    gap: 15px;
+
+    &__redes img {
+        padding: 20px;
+        width: 30%;
+        height: 30%;
+    }
+}
+
+.copy {
+    height: 50px;
+    background-color: #2a2626;
+    text-align: center;
+    color: beige;
+    padding: 15px 0 0 0;
+}

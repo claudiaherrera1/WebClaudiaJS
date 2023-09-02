@@ -1,0 +1,97 @@
+/* Contacto----------------------------------------------------------- */
+
+.cform {
+    background-image: url("../images/mapa.jpg");
+    @extend .d-bienv;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login-box {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    width: 40%;
+    padding: 2em;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    }
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    color: black;
+    background-color:rgba(236, 113, 12, 0.267);
+    border: none;
+    outline: none;
+    margin-left: 0.5%;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: rgba(236, 113, 12, 0.322);
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 5%;
+    letter-spacing: 4px;
+}
+
+.login-box a:hover {
+    background: rgba(236, 113, 12);
+    color: beige;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(236, 113, 12),
+                0 0 25px rgba(236, 113, 12),
+                0 0 50px rgba(236, 113, 12),
+                0 0 100px rgba(236, 113, 12);
+}
+.user-box {
+    padding: 1.5em 0;
+}
+
+.mesage {
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    text-transform:uppercase;
+    padding: 20px;        
+    }

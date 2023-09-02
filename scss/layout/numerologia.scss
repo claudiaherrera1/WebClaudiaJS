@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    font-family: "Kalam";
+    outline: none;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2em;
+  }
+  
+  a {
+    color: black;
+    border: 3px solid rgba(255, 165, 0, 0);
+    padding: 0 5px;
+    text-decoration: none;
+    transition: border 0.5s;
+  }
+  
+  a.highlight {
+    border: 3px solid rgb(65, 56, 184);
+    transition: border 0.5s;
+  }
+  
+  a:hover {
+    background: rgb(153, 207, 222);
+    transition: all 0.3s;
+  }
+  .intro_num {
+    background-color: #33313b;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    text-align: center;
+  }
+  .intronum {
+    color:rgb(129, 147, 157);
+    font-size: 18px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/numeros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: -100px;
+  }
+  
+  .main-form {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    height: 70vh;
+  }
+  
+  .main-form input:not(#save) {
+    width: 100%;
+    padding: 50px;
+    border: none;
+    background: #33313bc1;
+    text-transform: uppercase;
+    min-height: 115px;
+    font-size: 1.5em;
+    color: rgb(148, 170, 183);
+  }
+  
+  .main-form label {
+    align-self: flex-end;
+  }
+  
+  .main-form button {
+    width: 30%;
+    margin-top: 10px;
+    align-self: flex-end;
+    padding: 10px;
+    height: 90px;
+    font-size: 1.8em;
+    background: rgb(129, 147, 157);
+  }
+  
+  .main-form button:hover {
+    cursor: pointer;
+  }
+  
+  .error {
+    display: flex;
+    align-items: flex-start;
+    color: rgb(66, 146, 189);
+    font-size: 2em;
+    height: 50px;
+    transition: transform 0.4s;
+    transform: translateX(-20px);
+  }
+  
+  .error-show {
+    align-self: center;
+    color: rgb(129, 147, 157);
+    text-shadow: black;
+    font-size: 20px;
+    transform: translateX(30px);
+  }
+  
+  .numberTypes {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+    min-height: 95vh;
+    justify-content: center;
+    background: rgb(156, 173, 192);
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+  
+  .numberTypes li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-bottom: 3px dashed rgba(0, 0, 0, 0);
+    height: 25vh;
+    padding: 10px;
+    font-size: 1.8em;
+  }
+  
+  li.show {
+    width: 100%;
+    border-bottom: 3px dashed rgba(0, 0, 0, 1);
+    transition: all 1s;
+    color: black;
+  }
+  
+   
+  @media all and (max-width: 750px) {
+    .main-form input {
+      font-size: 1.2em;
+    }
+  
+    .main-form button {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media all and (max-width: 640px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    .main-form input:not(#save) {
+      padding: 20px;
+      min-height: 10px;
+      height: 15px;
+      font-size: 1.5em;
+    }
+  
+    .main-form button {
+      height: 40px;
+      padding: 5px;
+      width: 30%;
+    }
+  
+    .main-form button {
+      font-size: 1.2em;
+      width: 100%;
+    }
+  
+    .error {
+      font-size: 1.1em;
+      height: 20px;
+    }
+  
+    .numberTypes li {
+      font-size: 1.4em;
+      width: 95%;
+    }
+  
+    li.show {
+      width: 100%;
+    }
+  }
+  
+  @media all and (max-width: 640px) and (orientation: landscape) {
+    .main-form h1 {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+  
+    .main-form input:not(#save) {
+      padding: 30px;
+      min-height: 20px;
+      height: 15px;
+    }
+  
+    .main-form button {
+      height: 40px;
+      padding: 5px;
+      width: 30%;
+    }
+  
+    .main-form label {
+      align-self: flex-end;
+    }
+  
+    .numberTypes {
+      min-height: 92vh;
+      margin-bottom: 2px;
+    }
+  
+    .numberTypes li {
+      height: 23vh;
+    }
+  }

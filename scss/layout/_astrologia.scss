@@ -1,0 +1,87 @@
+/*.....ASTROLOGÍA.......*/
+.bienvenida__astro {
+    background-image: url("../images/astrofondo.jpg");
+    @extend .d-flex;
+    @extend .d-bienv;
+
+    &__frase {
+        color: #1d1d1da9;
+    }
+}
+
+.separadora {
+    @include separ;
+    padding: 40px;
+
+    p {
+        font-size: 2rem;
+        color: beige;
+        padding: 40px;
+    }
+}
+
+.articulo {
+    display: flex;
+    height: 800px;
+    background-image: url("../images/fondoindex8.jpg");
+    @include bg;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        padding: 30px
+    }
+
+    &__cuerpo {
+        padding: 30px;
+
+        &__title {
+            font-size: 2.5rem;
+        }
+
+        &__texto {
+            color: black;
+            font-size: 1.5rem;
+        }
+    }
+    
+}
+
+.articulos {
+    @include separ;
+    padding: 1.5em;
+
+    &__esferas img {
+        width: 100px;
+        margin: 5px -15px;
+        transition: all 0.35s ease;
+    }
+
+    &__esferas img:hover {
+        transform: translateY(30px);
+        scale: 1.4;
+    }
+}
+
+.articulos p {
+    font-size: 2rem;
+}
+
+.modal-body p {
+    color: beige;
+}
+
+.modal-header H1 {
+    font-size: 30px;
+}
+
+.row {
+    text-align: left;
+    padding: 20px 30px 0 20px;
+}
+
+.col-md-6 img {
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
+}

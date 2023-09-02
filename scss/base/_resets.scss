@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300&display=swap');
+
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #33313b;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: beige;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: beige;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: beige;
+}

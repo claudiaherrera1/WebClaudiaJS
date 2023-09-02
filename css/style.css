@@ -1,0 +1,1076 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300&display=swap");
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #33313b;
+}
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  color: beige;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: beige;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: beige;
+}
+
+.d-bienv, .cform, .bienvenida__gemo, .bienvenida__astro {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.d-flex, .bienvenida__gemo, .bienvenida__astro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+}
+
+.offcanvas {
+  background-color: #33313b;
+}
+
+.offcanvas-title {
+  color: beige;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.pie {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 200px;
+  background-image: url("../images/footer.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  gap: 15px;
+}
+.pie__redes img {
+  padding: 20px;
+  width: 30%;
+  height: 30%;
+}
+
+.copy {
+  height: 50px;
+  background-color: #2a2626;
+  text-align: center;
+  color: beige;
+  padding: 15px 0 0 0;
+}
+
+.bienvenida__index {
+  background-image: url("../images/astrologiafondo.jpg");
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bienvenida__index__img {
+  width: 30%;
+  flex: 1;
+  padding: 50px;
+  min-width: 250px;
+  object-fit: cover;
+  animation-name: animacion;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  transform: translateX(0);
+}
+.bienvenida__index__img img {
+  width: 100%;
+  height: 100%;
+}
+.bienvenida__index__texto {
+  flex: 2;
+  padding: 55px;
+  animation-name: texto;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  transform: translateX(0);
+}
+.bienvenida__index__texto h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  padding: 25px;
+}
+.bienvenida__index__texto p {
+  font-size: 2rem;
+  color: beige;
+}
+
+@keyframes animacion {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes texto {
+  0% {
+    transform: translateX(800px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.separador {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background: #33313b;
+  text-align: center;
+  padding: 40px;
+  transition: all 0.35s ease;
+}
+.separador:hover {
+  background-color: rgb(5, 55, 64);
+  color: #dbe1e1;
+}
+.separador__texto {
+  font-size: 20px;
+  color: beige;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  height: 800px;
+  background-image: url("../images/fondoindex9.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+.cards h2 {
+  display: flex;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 400;
+}
+
+.card-group {
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background-color: rgba(90, 13, 13, 0.5450980392);
+  justify-content: center;
+}
+.card img {
+  border-radius: 100%;
+  padding: 15px;
+  transition: all 0.35s ease;
+}
+.card img:hover {
+  scale: 1.1;
+  filter: hue-rotate(180deg);
+}
+
+.card-title {
+  text-align: center;
+  color: beige;
+}
+
+.card-text {
+  text-align: center;
+  color: #fff;
+}
+
+/*.....ASTROLOGÍA.......*/
+.bienvenida__astro {
+  background-image: url("../images/astrofondo.jpg");
+}
+.bienvenida__astro__frase {
+  color: rgba(29, 29, 29, 0.662745098);
+}
+
+.separadora {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background: #33313B;
+  text-align: center;
+  padding: 40px;
+}
+.separadora p {
+  font-size: 2rem;
+  color: beige;
+  padding: 40px;
+}
+
+.articulo {
+  display: flex;
+  height: 800px;
+  background-image: url("../images/fondoindex8.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+.articulo img {
+  padding: 30px;
+}
+.articulo__cuerpo {
+  padding: 30px;
+}
+.articulo__cuerpo__title {
+  font-size: 2.5rem;
+}
+.articulo__cuerpo__texto {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.articulos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background: #33313B;
+  text-align: center;
+  padding: 1.5em;
+}
+.articulos__esferas img {
+  width: 100px;
+  margin: 5px -15px;
+  transition: all 0.35s ease;
+}
+.articulos__esferas img:hover {
+  transform: translateY(30px);
+  scale: 1.4;
+}
+
+.articulos p {
+  font-size: 2rem;
+}
+
+.modal-body p {
+  color: beige;
+}
+
+.modal-header H1 {
+  font-size: 30px;
+}
+
+.row {
+  text-align: left;
+  padding: 20px 30px 0 20px;
+}
+
+.col-md-6 img {
+  width: 40%;
+  height: auto;
+  margin-left: 30%;
+}
+
+/*  - GEMOTERAPIA ----------------------------------------------------*/
+.bienvenida__gemo {
+  background-image: url("../images/caratula3.jpg");
+}
+.bienvenida__gemo__title {
+  width: 300px;
+  height: auto;
+  text-shadow: #Fff 1px 0 15px;
+  border-radius: 5%;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  background: rgba(51, 49, 59, 0.5019607843);
+}
+
+.gemas {
+  width: 100%;
+  font-size: 25px;
+}
+
+.geo {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5em;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.geo__tarjeta {
+  border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  flex-basis: 280px;
+  max-width: 250px;
+  flex-grow: 1;
+}
+.geo__tarjeta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.geo__tarjeta__cuerpo {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(31, 61, 71, 0.2196078431);
+  backdrop-filter: blur(5px);
+  border-radius: 100%;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1.5s;
+  text-align: center;
+}
+.geo__tarjeta__cuerpo__titulo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+}
+.geo__tarjeta__cuerpo__subtitulo {
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 300;
+}
+.geo__tarjeta__cuerpo__info {
+  font-size: 12px;
+}
+
+.geo__tarjeta:hover .geo__tarjeta__cuerpo {
+  right: 0;
+}
+
+.botiquin {
+  padding: 20px 20px 0 0;
+}
+.botiquin h2 {
+  text-align: center;
+}
+.botiquin__texto {
+  font-size: 20px;
+  color: beige;
+  padding: 20px;
+}
+
+.articulo-gemas {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.articulo-gemas__cuerpo {
+  background-color: #494852;
+  border-radius: 5%;
+  color: beige;
+  padding: 20px;
+  gap: 20px;
+}
+.articulo-gemas__video {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px 0 0 40px;
+  gap: 2.5em;
+}
+
+/*BIOGRAFIA */
+.biografia__imagenes {
+  display: flex;
+  width: 100%;
+  height: 304px;
+  background-image: url("../images/cartafondo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: cover;
+}
+.biografia__imagenes img {
+  width: 280px;
+  border-radius: 100%;
+  position: absolute;
+  top: 20%;
+  right: 8%;
+}
+
+.biografia__cuerpo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #b1c3c8;
+  margin-top: 60px;
+  padding: 4.1em;
+}
+.biografia__cuerpo h2 {
+  margin: 0 0 0 30px;
+}
+.biografia__cuerpo__texto {
+  color: #b1c3c8;
+  width: 100%;
+  font-size: 18px;
+  padding: 2.1em;
+}
+
+/* Contacto----------------------------------------------------------- */
+.cform {
+  background-image: url("../images/mapa.jpg");
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login-box {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  width: 40%;
+  padding: 2em;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  color: black;
+  background-color: rgba(236, 113, 12, 0.267);
+  border: none;
+  outline: none;
+  margin-left: 0.5%;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: rgba(236, 113, 12, 0.322);
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 5%;
+  letter-spacing: 4px;
+}
+
+.login-box a:hover {
+  background: rgb(236, 113, 12);
+  color: beige;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(236, 113, 12), 0 0 25px rgb(236, 113, 12), 0 0 50px rgb(236, 113, 12), 0 0 100px rgb(236, 113, 12);
+}
+
+.user-box {
+  padding: 1.5em 0;
+}
+
+.mesage {
+  width: 100%;
+  height: 15vh;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+/* --------------MEDIA QUERY  INDEX------------------------------------------*/
+@media only screen and (max-width: 900px) {
+  .card-group {
+    width: 85%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  .cards {
+    height: 1000px;
+  }
+}
+@media only screen and (max-width: 655px) {
+  .bienvenida__index {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+  .bienvenida__index .bienvenida__index__texto {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+  .bienvenida__index .bienvenida__index__texto h1 {
+    font-size: 2rem;
+    padding: 20px 0 0 0;
+  }
+  .bienvenida__index .separador__texto p {
+    padding: 5px !important;
+  }
+  .cards h2 {
+    font-size: 20px;
+  }
+  .cards p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 577px) {
+  .cards {
+    height: auto;
+  }
+  .card-group {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .pie__redes img {
+    padding: 5px;
+  }
+  .bienvenida__texto {
+    padding: 15px;
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .separador {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background: rgb(42, 38, 38);
+    text-align: center;
+    padding: 20px;
+  }
+  .copy {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 356px) {
+  .bienvenida__index {
+    height: auto;
+  }
+  .bienvenida img {
+    width: 80%;
+    height: auto;
+  }
+  .card-group {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+  }
+  .pie {
+    height: 150px;
+    padding: 0 0 30px 0;
+  }
+  .separador {
+    height: auto;
+  }
+  .novedades__texto {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+/* ---------FINAL MEDIA QUERY  INDEX-------------------------------*/
+/* ---------MEDIA QUERY BIO----------------------------------------*/
+@media only screen and (max-width: 400px) {
+  .biografia__cuerpo {
+    margin: 0px;
+  }
+  .biografia__cuerpo__texto p {
+    margin-top: 0;
+    height: auto;
+    padding: 5px;
+  }
+  .biografia__cuerpo .biografia__cuerpo h2 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .biografia__cuerpo {
+    padding: 6%;
+  }
+  .biografia__cuerpo__texto {
+    padding: 0;
+  }
+  .biografia__imagenes img {
+    width: 180px;
+    height: auto;
+    top: 20%;
+    right: 25%;
+  }
+}
+/* ---------------ASTROLOGIA QUERYS--------------------------------*/
+@media only screen and (max-width: 1000px) {
+  .bienvenida__frase {
+    padding: 15%;
+  }
+  .articulo {
+    display: grid;
+    height: auto;
+    place-items: center;
+  }
+  .articulo img {
+    padding: 0px;
+  }
+  .separadora {
+    padding: 0px;
+  }
+  .separadora p {
+    font-size: 1.5rem;
+  }
+  .articulos {
+    justify-content: center;
+    padding: 0 20px;
+    margin: 0px -15px;
+  }
+  .pie {
+    width: auto;
+    height: 150px;
+    padding: 0 0 30px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bienvenida__astro {
+    height: auto;
+  }
+  .bienvenida__frase {
+    font-size: 2.5rem;
+  }
+  .articulo__cuerpo {
+    padding: 5%;
+  }
+  .articulo__cuerpo__texto p {
+    font-size: 2rem;
+    text-align_: justify;
+  }
+  .separadora p {
+    padding: 5%;
+  }
+  .articulos {
+    margin: 0;
+    padding: 0;
+  }
+}
+/* -----  ----FINAL ASTROLOGIA QUERYS--------------------------------*/
+/*media query GEMOTERAPIA -------------------*/
+@media only screen and (max-width: 1000px) {
+  .articulo-gemas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .articulo-gemas__cuerpo {
+    border-radius: 0;
+  }
+  .articulo-gemas__video {
+    display: flex;
+    width: 70%;
+    padding: 20px 0 0 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bienvenida__gemo__title {
+    padding: 0%;
+    margin: 0%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .articulo-gemas__cuerpo {
+    font-size: 12px;
+  }
+  .articulo-gemas__video {
+    width: 90%;
+    justify-content: center;
+    padding: 20px 0 0 0;
+  }
+}
+@media only screen and (max-width: 335px) {
+  .bienvenida__gemo__title {
+    width: auto;
+    text-shadow: #Fff 1px 0 15px;
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    padding: 2%;
+  }
+  .gem {
+    font-size: 2rem;
+    padding: 5%;
+  }
+}
+/*media query FOOTER -------------------*/
+@media only screen and (max-width: 450px) {
+  .pie {
+    height: 130px;
+    justify-content: space-evenly;
+    margin: 10px;
+  }
+}
+/*media query CONTACTO -------------------*/
+@media only screen and (max-width: 1000px) {
+  .login-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .login-box {
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    padding: 5%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .login-box {
+    width: 100%;
+  }
+  .login-box h2 {
+    margin-top: 20px;
+  }
+}
+.art {
+  width: 100%;
+  height: auto;
+}
+.art__nuevos {
+  width: 90%;
+  height: auto;
+  background-color: #484553;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem;
+  padding: 1.5rem;
+}
+.art__novedad {
+  padding: 25px;
+}
+
+.cartel {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Kalam";
+  outline: none;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+
+a {
+  color: black;
+  border: 3px solid rgba(255, 165, 0, 0);
+  padding: 0 5px;
+  text-decoration: none;
+  transition: border 0.5s;
+}
+
+a.highlight {
+  border: 3px solid rgb(65, 56, 184);
+  transition: border 0.5s;
+}
+
+a:hover {
+  background: rgb(153, 207, 222);
+  transition: all 0.3s;
+}
+
+.intro_num {
+  background-color: #33313b;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  text-align: center;
+}
+
+.intronum {
+  color: rgb(129, 147, 157);
+  font-size: 18px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/numeros.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: -100px;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  height: 70vh;
+}
+
+.main-form input:not(#save) {
+  width: 100%;
+  padding: 50px;
+  border: none;
+  background: rgba(51, 49, 59, 0.7568627451);
+  text-transform: uppercase;
+  min-height: 115px;
+  font-size: 1.5em;
+  color: rgb(148, 170, 183);
+}
+
+.main-form label {
+  align-self: flex-end;
+}
+
+.main-form button {
+  width: 30%;
+  margin-top: 10px;
+  align-self: flex-end;
+  padding: 10px;
+  height: 90px;
+  font-size: 1.8em;
+  background: rgb(129, 147, 157);
+}
+
+.main-form button:hover {
+  cursor: pointer;
+}
+
+.error {
+  display: flex;
+  align-items: flex-start;
+  color: rgb(66, 146, 189);
+  font-size: 2em;
+  height: 50px;
+  transition: transform 0.4s;
+  transform: translateX(-20px);
+}
+
+.error-show {
+  align-self: center;
+  color: rgb(129, 147, 157);
+  text-shadow: black;
+  font-size: 20px;
+  transform: translateX(30px);
+}
+
+.numberTypes {
+  display: none;
+  flex-direction: column;
+  list-style-type: none;
+  width: 100%;
+  padding-left: 0;
+  min-height: 95vh;
+  justify-content: center;
+  background: rgb(156, 173, 192);
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.numberTypes li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-bottom: 3px dashed rgba(0, 0, 0, 0);
+  height: 25vh;
+  padding: 10px;
+  font-size: 1.8em;
+}
+
+li.show {
+  width: 100%;
+  border-bottom: 3px dashed rgb(0, 0, 0);
+  transition: all 1s;
+  color: black;
+}
+
+@media all and (max-width: 750px) {
+  .main-form input {
+    font-size: 1.2em;
+  }
+  .main-form button {
+    font-size: 1.5em;
+  }
+}
+@media all and (max-width: 640px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .main-form input:not(#save) {
+    padding: 20px;
+    min-height: 10px;
+    height: 15px;
+    font-size: 1.5em;
+  }
+  .main-form button {
+    height: 40px;
+    padding: 5px;
+    width: 30%;
+  }
+  .main-form button {
+    font-size: 1.2em;
+    width: 100%;
+  }
+  .error {
+    font-size: 1.1em;
+    height: 20px;
+  }
+  .numberTypes li {
+    font-size: 1.4em;
+    width: 95%;
+  }
+  li.show {
+    width: 100%;
+  }
+}
+@media all and (max-width: 640px) and (orientation: landscape) {
+  .main-form h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .main-form input:not(#save) {
+    padding: 30px;
+    min-height: 20px;
+    height: 15px;
+  }
+  .main-form button {
+    height: 40px;
+    padding: 5px;
+    width: 30%;
+  }
+  .main-form label {
+    align-self: flex-end;
+  }
+  .numberTypes {
+    min-height: 92vh;
+    margin-bottom: 2px;
+  }
+  .numberTypes li {
+    height: 23vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

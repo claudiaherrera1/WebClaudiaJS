@@ -1,0 +1,333 @@
+/* --------------MEDIA QUERY  INDEX------------------------------------------*/
+
+@media only screen and (max-width:900px) {
+    .card-group {
+        width: 85%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .cards {
+        height: 1000px;
+    }
+}
+
+@media only screen and (max-width:655px) {
+    .bienvenida__index {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+
+        .bienvenida__index__texto {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            padding: 0px;
+        }
+
+        .bienvenida__index__texto h1 {
+            font-size: 2rem;
+            padding: 20px 0 0 0;
+        }
+
+        .separador__texto p {
+            padding: 5px !important;
+        }
+    }
+
+    .cards h2 {
+        font-size: 20px;
+    }
+
+    .cards p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:577px) {
+    .cards {
+        height: auto;
+    }
+
+    .card-group {
+        width: 80%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        gap: 25px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:470px) {
+    .pie__redes img {
+        padding: 5px;
+    }
+
+    .bienvenida__texto {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .separador {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background: rgb(42, 38, 38);
+        text-align: center;
+        padding: 20px;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:356px) {
+    .bienvenida__index {
+        height: auto;
+    }
+
+    .bienvenida img {
+        width: 80%;
+        height: auto;
+    }
+
+    .card-group {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .pie {
+        height: 150px;
+        padding: 0 0 30px 0;
+    }
+
+    .separador {
+        height: auto;
+    }
+
+    .novedades__texto {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+/* ---------FINAL MEDIA QUERY  INDEX-------------------------------*/
+
+/* ---------MEDIA QUERY BIO----------------------------------------*/
+@media only screen and (max-width:400px) {
+
+    .biografia__cuerpo {
+        margin: 0px;
+
+        &__texto p {
+            margin-top: 0;
+            height: auto;
+            padding: 5px;
+        }
+
+        .biografia__cuerpo h2 {
+            margin: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .biografia__cuerpo {
+        padding: 6%;
+    }
+
+    .biografia__cuerpo__texto {
+        padding: 0;
+    }
+
+    .biografia__imagenes img {
+        width: 180px;
+        height: auto;
+        top: 20%;
+        right: 25%;
+    }
+}
+
+/* ---------------ASTROLOGIA QUERYS--------------------------------*/
+
+@media only screen and (max-width:1000px) {
+    .bienvenida__frase {
+        padding: 15%;
+    }
+
+    .articulo {
+        display: grid;
+        height: auto;
+        place-items: center;
+
+        img {
+            padding: 0px
+        }
+    }
+
+    .separadora {
+        padding: 0px;
+    }
+
+    .separadora p {
+        font-size: 1.5rem;
+    }
+
+    .articulos {
+        justify-content: center;
+        padding: 0 20px;
+        margin: 0px -15px;
+    }
+
+    .pie {
+        width: auto;
+        height: 150px;
+        padding: 0 0 30px 0;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .bienvenida__astro {
+        height: auto;
+    }
+
+    .bienvenida__frase {
+        font-size: 2.5rem;
+
+    }
+
+    .articulo__cuerpo {
+        padding: 5%;
+
+        &__texto p {
+            font-size: 2rem;
+            text-align_: justify;
+        }
+    }
+
+    .separadora p {
+        padding: 5%;
+    }
+
+    .articulos {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* -----  ----FINAL ASTROLOGIA QUERYS--------------------------------*/
+
+/*media query GEMOTERAPIA -------------------*/
+
+@media only screen and (max-width:1000px) {
+
+    .articulo-gemas {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &__cuerpo {
+            border-radius: 0;
+        }
+
+        &__video {
+            display: flex;
+            width: 70%;
+            padding: 20px 0 0 40px;
+        }
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .bienvenida__gemo__title {
+        padding: 0%;
+        margin: 0%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+
+    .articulo-gemas__cuerpo {
+        font-size: 12px;
+    }
+
+    .articulo-gemas__video {
+        width: 90%;
+        justify-content: center;
+        padding: 20px 0 0 0;
+    }
+}
+
+@media only screen and (max-width:335px) {
+    .bienvenida__gemo__title {
+        width: auto;
+        text-shadow: #Fff 1px 0 15px;
+        position: absolute;
+        top: 20%;
+        right: 0%;
+        padding: 2%;
+    }
+
+    .gem {
+        font-size: 2rem;
+        padding: 5%;
+    }
+
+}
+
+/*media query FOOTER -------------------*/
+@media only screen and (max-width:450px) {
+    .pie {
+        height: 130px;
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+}
+
+/*media query CONTACTO -------------------*/
+@media only screen and (max-width:1000px) {
+    .login-box {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 80%;
+                
+        }
+}
+
+@media only screen and (max-width:770px) {
+    .login-box {
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        padding: 5%;
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+    .login-box {
+        width: 100%;
+        h2 {
+            margin-top: 20px;
+        }
+    }
+    
+    
+}
