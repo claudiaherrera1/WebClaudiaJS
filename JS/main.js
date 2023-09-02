@@ -1,5 +1,7 @@
 
-// 
+// main.js  relacionado a numerologia.html
+// llamando los datos del formulario html y creo constantes para los cálculos
+// código en ingles para evitar acentos, etc
 (function () {
   const numeroscopio = {};
   const name = document.querySelector(`[name="name"]`);
@@ -23,7 +25,7 @@
     destino: calculateDestino,
     personalidad: calculatePersonalidad
   };
-
+  // links a las páginas html que contendran los significados de cada tipo de número y de cada número
   const numberTypeLinks = {
     caminoVida: "http://claudiaherrera.online",
     senderoAlma: "http://claudiaherrera.online",
@@ -35,7 +37,7 @@
   for (let i = 0; i < 26; i++) {
     numeroscopio[String.fromCharCode("a".charCodeAt(0) + i)] = i % 9 + 1;
   }
-
+  // acumulando en localStorage nombre y natalicio cuando se complete 
   if (localStorage.getItem("name")) {
     name.value = localStorage.getItem("name");
     save.checked = true;
@@ -45,7 +47,7 @@
     date.value = localStorage.getItem("birthDate");
     save.checked = true;
   }
-
+  //  funciones para calcular los tipos de números, número destino, camino de vida, sendero del alma y personalidad
   function calculateDestino(fullName) {
     const names = fullName.toLowerCase().split(" ");
 
@@ -59,7 +61,7 @@
 
     return reduceNumber(result);
   }
-
+  // split para separa en dígitos 
   function calculateCaminoVida(birthdate) {
     const [year, month, day] = birthdate.split("-");
     const sum = parseInt(year) + parseInt(month) + parseInt(day);
@@ -80,7 +82,7 @@
 
     return reduceNumber(result);
   }
-
+  //separando vocales del nombre 
   function calculatePersonalidad(fullName) {
     const regexp = /[^aeiou\s]/gi;
 
@@ -95,7 +97,7 @@
 
     return reduceNumber(result);
   }
-
+  // en la reducción los número 10, 11, 22, 33 son maestron no debe reducir
   function reduceNumber(num) {
     if (num < 10 || num === 11 || num === 22 || num === 33) {
       return num;
@@ -110,7 +112,7 @@
 
     return reduceNumber(num);
   }
-
+  // Retornos 
   function doCalculations(e) {
     e.preventDefault();
 
